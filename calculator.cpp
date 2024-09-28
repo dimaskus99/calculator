@@ -15,3 +15,10 @@ int Calculator::Mul (double a, double b)
 {
     return a * b + 0.5;
 }
+int Calculator::Div(double a, double b)
+{
+    if (b == 0){
+        throw std:invalid_argument("Ділення на 0!");
+    }
+    return a / b;
+}
